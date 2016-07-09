@@ -5,7 +5,7 @@ i=1
 while [ $i -le 13 ]
  do
  v.extract --overwrite InvPoint_dragonfly  output=point_select where="cat="$i""
-# v.buffer --overwrite input=point_select output=point_select_buff type=point distance=500
+ v.buffer --overwrite input=point_select output=point_select_buff type=point distance=500
 # v.type --overwrite input=point_select output=point_select_cent type=point,centroid
 # v.patch --overwrite input=point_select_cent,point_select_buff output=point_select_patch
 # db.copy from_table=point_select_cent to_table=point_select_patch
