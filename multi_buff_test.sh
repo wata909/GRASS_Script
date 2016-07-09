@@ -2,7 +2,7 @@
 
 i=1
 
-while [ $i -le 13 ]
+while [ $i -le 2 ]
  do
  v.extract --overwrite InvPoint_dragonfly  output=point_select where="cat="$i""
  v.buffer --overwrite input=point_select output=point_select_buff type=point distance=500
